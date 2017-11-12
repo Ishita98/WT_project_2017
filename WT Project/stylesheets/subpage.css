@@ -1,0 +1,133 @@
+/*GENERAL
+
+*Fonts: work sans (paragraph) and josefin slab (headings)
+
+*Colours:
+	-Crimson: #c76766
+	-Indigo: #30415d
+	-Ultramarine: #031424
+	-Light BLue: #8eaebd
+	-Fresh: #ccdfcb
+*/ 
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Work Sans', sans-serif;
+}
+p
+{
+	font-family: 'Work Sans', sans-serif;
+	color:#031424
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Josefin Slab', serif;
+}
+h4
+{
+	color:#8eaebd
+}
+
+/*HEADING */
+.title
+{
+	font-family: 'Josefin Slab', serif;
+	text-align:center;
+	color:#ccdfcb;
+	font-size:0.8em;
+	top:0;
+	margin:auto;
+	padding:20px 0px;
+	
+	
+}
+.main
+{
+	margin-top:30px;
+}
+
+/*TOP MENU BAR: Contains links to homepage, page#1, page#2, page#3 */
+#Menu
+{
+	z-index:100;
+	text-align: center;
+	list-style-type: none;
+    margin: auto;
+    padding:15px;
+    overflow: hidden;
+    width:600;
+    /*to avoid the absolute position being a problem add opacity as 0.99*/
+    opacity:0.99;
+}
+#Menu li a {
+    color: #cf6766;
+    text-align: center;
+    font-weight:bold;
+    text-decoration: none;
+	margin:auto;
+	width:120px;
+	padding:10px;
+	line-height: 30px;
+	font-size:1.5em;
+	font-family: 'Josefin Slab', serif;
+}
+
+#Menu a:hover 
+{ 
+text-decoration:underline;
+}
+
+#Menu li 
+{
+float: left;
+width:120px;
+height:40px;
+margin: 1px 4px;
+} 
+/*HEADING*/
+header
+{
+	font-size:4em;
+	margin-left:10%;
+	color:#30415d;
+}
+/*ABOUT*/
+.story
+{
+	margin:0 10% 20px;
+	color:#031424;
+	text-align:justify;
+}
+.story img
+{
+	margin: 0px;;
+	width:100%;
+}
+/*FOOTER AND NAVIGATION BAR*/
+footer
+{
+	width:100%;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	text-align:center;
+	background-color:#c76766;
+	overflow:hidden;
+	/*height:20px;*/
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #031424;
+    height:10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+

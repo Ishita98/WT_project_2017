@@ -1,0 +1,42 @@
+body
+{
+  text-align:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  background-color: black;
+  color: white;
+  font-style: oblique;
+  opacity: 0.75;
+}
+input{
+  margin-top:7px;
+	padding-bottom:7px;
+  line-height:40px;
+	width:400px;
+	text-align:center;
+	background-color: #325371;
+  color: white;
+	font-size:1em;
+	border-style:none;
+  opacity: 0.9;
+}
+input:hover{
+  background-color: rgb(50, 217, 172);
+}
+form{
+  background-color: black;
+  padding: 50px;
+  opacity: 0.75;
+  border-radius: 7px;
+}
+input[type=submit]
+{
+  border-radius:20px;
+}
+form{
+  display: inline-block;
+  text-align: :center;
+  margin-top: 150px;
+}

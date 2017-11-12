@@ -1,0 +1,339 @@
+/*GENERAL
+
+*Fonts: work sans (paragraph) and josefin slab (headings)
+
+*Colours:
+	-Crimson: #c76766
+	-Indigo: #30415d
+	-Ultramarine: #031424
+	-Light BLue: #8eaebd
+	-Fresh: #ccdfcb
+*/
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Work Sans', sans-serif;
+}
+p
+{
+	font-family: 'Work Sans', sans-serif;
+	color:#031424
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Josefin Slab', serif;
+}
+h4
+{
+	color:#8eaebd
+}
+
+
+/*SITE HEADING: Contains title and tage line*/
+.title
+{
+	position: absolute;
+	display:flex;
+  	align-items:center;
+  	justify-content:center;
+  	top:0px;
+  	bottom:0px;
+  	left:0px;
+  	right:0px;
+}
+video
+{
+  	z-index:-1;
+  	max-width:100%;
+  	max-height:100%;
+  	object-fit:cover;
+  	margin-bottom:20px;
+}
+
+header
+{
+font-size:3em;
+color:white;
+text-align: center;
+}
+
+/*TOP MENU BAR: Contains links to homepage, page#1, page#2, page#3 */
+#Menu
+{
+	z-index:100;
+	text-align: center;
+	list-style-type: none;
+    margin: auto;
+    padding-left: 15px;
+    overflow: hidden;
+    width:600;
+    /*to avoid the absolute position being a problem add opacity as 0.99*/
+    opacity:0.99;
+}
+#Menu li a {
+    color: #cf6766;
+    text-align: center;
+    font-weight:bold;
+    text-decoration: none;
+	margin:auto;
+	width:120px;
+	padding:10px;
+	line-height: 30px;
+	font-size:1.5em;
+	font-family: 'Josefin Slab', serif;
+}
+
+#Menu a:hover
+{
+text-decoration:underline;
+}
+
+#Menu li
+{
+float: left;
+width:120px;
+height:40px;
+margin: 1px 4px;
+}
+
+/*RECENT STORIES: Displays RECENT stories in sections */
+.recent h3
+{
+	margin:auto;
+	font-size:3em;
+	text-align: center;
+	color:#30415d;
+}
+.recent p
+{
+	margin-bottom:20px;
+}
+.recent section
+{
+	margin:auto;
+	width: auto;
+	margin: 15px;
+	border: 0.2px solid #30415d;
+	padding:30px;
+
+}
+.recent img
+{
+	padding:15px;
+	width:100%;
+}
+.recent a
+{
+
+	background-color:#c76766;
+	color:#ffffff;
+	border:none;
+	text-decoration:none;
+	padding:10px;
+	text-align:center;
+	margin-top:20px;
+}
+.recent a:hover
+{
+	border: 0.5px solid #30415d;
+	color:#c76766;
+	background-color:#ffffff;
+}
+.recent
+{
+	margin-left:60px;
+	width:60%;
+	position:relative;
+}
+/*COMMENTS*/
+
+/*#comment
+{
+	text-align:center;
+	margin:35px 20px;
+	width:30%;
+	padding:20px;
+	color:#031424;
+	background-color:#c76766;
+	float:right;
+}
+#comment ul
+{
+	list-style-type:none;
+}*/
+.comment
+{
+	position:absolute;
+	text-align:center;
+	margin-top:50px; /*was 35*/
+	margin-left:68%;
+	margin-right:40px;
+	height:400px;
+	padding:20px;
+	color:#031424;
+	background-color:#c76766;
+	float:right;
+	opacity:0.97;
+}
+.comment textarea
+{
+	background-color: #ffffff;
+	font-size:1em;
+	width:70%;
+	height:30%;
+	padding:10px;
+	border-style:none
+}
+.comment ul
+{
+	list-style-type:none;
+}
+
+/*SIGN-UP BUTTON: Signs you up for the weekly newsletter.*/
+#signup
+{
+	font-size: 2em;
+	text-align:center;
+	color:#8eaebd;
+	background-color:#ccdfcb;
+	height:270px;
+	}
+
+#signup h2
+{
+	padding-top:50px;
+	padding-bottom:20px;
+}
+#signup input
+{
+	margin-top:7px;
+	padding-bottom:7px;
+	line-height:40px;
+	width:413px; 
+	text-align:center;
+	background-color: #031424;
+	color:#8eaebd;
+	font-size:0.5em;
+	border-style:none
+}
+#signup:hover
+{
+	background-color:#031424;
+}
+#signup input:hover
+{
+	background-color:#ccdfcb;
+	color:#031424
+}
+
+/*SLIDE SHOW: shows slide shows of cool things*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto ;
+}
+.mySlides {
+    display: none;
+}
+
+
+/*Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/*Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:#031424;
+  background-color:#8eaebd;
+  opacity:0.7;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+}
+
+
+/*The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Fading animation */
+.fade {
+  animation: xfade 16s 0s infinite;
+}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*FOOTER AND NAVIGATION BAR*/
+footer
+{
+	width:100%;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	text-align:center;
+	background-color:#c76766;
+	overflow:hidden;
+	/*height:20px;*/
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #031424;
+    height:10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
